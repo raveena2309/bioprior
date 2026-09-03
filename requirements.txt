@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch
+torch-geometric
+networkx
+rdkit
+transformers
+matplotlib
+plotly
+requests
+python-dotenv
