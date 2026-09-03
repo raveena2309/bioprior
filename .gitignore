@@ -9,3 +9,4 @@ data/processed/
 *.log
 .DS_Store
 .env
+venv/
