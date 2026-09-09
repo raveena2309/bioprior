@@ -11,3 +11,6 @@ matplotlib
 plotly
 requests
 python-dotenv
+openpyxl
+
+rapidfuzz

@@ -1,0 +1,9 @@
+{
+  "arm": "A_baseline",
+  "final_train_loss": 1.4236578991571596,
+  "final_val_mse": 1.365843653678894,
+  "final_val_spearman": 0.9003056735160712,
+  "epochs": 50,
+  "n_train": 96599,
+  "n_val": 17046
+}
