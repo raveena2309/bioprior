@@ -1,0 +1,38 @@
+{
+  "arm": "A_baseline",
+  "evaluation": "5-fold cross-validation",
+  "training_table_rows": 151973,
+  "n_splits": 5,
+  "epochs_per_fold": 30,
+  "folds": [
+    {
+      "fold": 1,
+      "val_mse": 1.421121597290039,
+      "val_spearman": 0.8900667348052919
+    },
+    {
+      "fold": 2,
+      "val_mse": 1.4023973941802979,
+      "val_spearman": 0.891408969964188
+    },
+    {
+      "fold": 3,
+      "val_mse": 1.415021300315857,
+      "val_spearman": 0.88581302554555
+    },
+    {
+      "fold": 4,
+      "val_mse": 1.4504188299179077,
+      "val_spearman": 0.8875697227036133
+    },
+    {
+      "fold": 5,
+      "val_mse": 1.4338996410369873,
+      "val_spearman": 0.8862875344003324
+    }
+  ],
+  "mean_val_spearman": 0.8882291974837951,
+  "std_val_spearman": 0.002169347633990375,
+  "mean_val_mse": 1.4245717525482178,
+  "std_val_mse": 0.016431054685507814
+}

@@ -1,0 +1,10 @@
+{
+  "arm": "A_baseline",
+  "evaluation": "unseen-drug generalization",
+  "n_train_drugs": 138,
+  "n_test_drugs": 34,
+  "n_train_pairs": 122023,
+  "n_test_pairs": 29950,
+  "test_mse": 7.127556800842285,
+  "test_spearman": 0.42205519766013044
+}

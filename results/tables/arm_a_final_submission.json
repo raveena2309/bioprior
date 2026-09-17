@@ -1,0 +1,19 @@
+{
+  "arm": "A - Baseline (no biological prior)",
+  "single_split_result": {
+    "note": "Original run, on an earlier 113,645-row training table",
+    "val_spearman": 0.9003056735160712,
+    "val_mse": 1.365843653678894
+  },
+  "kfold_result": {
+    "note": "5-fold CV on current 151973-row table",
+    "mean_val_spearman": 0.8882291974837951,
+    "std_val_spearman": 0.002169347633990375
+  },
+  "unseen_drug_result": {
+    "note": "Held-out drugs never seen during training - hardest, most meaningful test",
+    "test_spearman": 0.42205519766013044,
+    "test_mse": 7.127556800842285,
+    "n_test_drugs": 34
+  }
+}
