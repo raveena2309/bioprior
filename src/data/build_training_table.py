@@ -4,23 +4,30 @@ import os
 def build_training_table(
     gdsc2_path="data/raw/gdsc2/GDSC2_fitted_dose_response_27Oct23.xlsx",
     cellline_map_path="data/processed/cellline_id_map.csv",
-    drug_map_path="data/processed/drug_id_map.csv",
+    drug_map_path="data/processed/drug_id_map_deduped.csv",
+    canonical_map_path="data/processed/drug_id_canonical_map.csv",
     label_column="LN_IC50",
     out_path="data/processed/training_table.csv",
 ):
     gdsc2 = pd.read_excel(gdsc2_path)
     cellline_map = pd.read_csv(cellline_map_path)
     drug_map = pd.read_csv(drug_map_path)
+    canonical_map = pd.read_csv(canonical_map_path)
 
     print("GDSC2 rows:", len(gdsc2))
 
-    # join cell-line IDs: GDSC2's SANGER_MODEL_ID -> CCLE's ccle_model_id
+    # collapse duplicate drug IDs to their canonical ID BEFORE any joins
+    canonical_dict = dict(zip(canonical_map["DRUG_ID"], canonical_map["canonical_drug_id"]))
+    gdsc2["DRUG_ID"] = gdsc2["DRUG_ID"].map(lambda x: canonical_dict.get(x, x))
+    print("After canonicalizing drug IDs, unique drugs in GDSC2:", gdsc2["DRUG_ID"].nunique())
+
+    # join cell-line IDs
     merged = gdsc2.merge(
         cellline_map, left_on="SANGER_MODEL_ID", right_on="sanger_model_id", how="inner"
     )
     print("After cell-line join:", len(merged))
 
-    # join drug IDs: GDSC2's DRUG_ID -> chembl_id + smiles
+    # join drug IDs (now using the deduped map)
     merged = merged.merge(
         drug_map[["DRUG_ID", "chembl_id", "canonical_smiles"]], on="DRUG_ID", how="inner"
     )
