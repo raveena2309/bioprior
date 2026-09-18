@@ -1,0 +1,42 @@
+cancer_type,n_pairs,spearman
+Ewing's Sarcoma,146,0.9355923380216519
+Burkitt's Lymphoma,200,0.917361434035851
+Thyroid Gland Carcinoma,322,0.9171479248903835
+Squamous Cell Lung Carcinoma,299,0.9155887539661068
+B-Lymphoblastic Leukemia,276,0.9155163069922825
+Esophageal Squamous Cell Carcinoma,528,0.9147372629578886
+Mesothelioma,172,0.9141856185784073
+Head and Neck Carcinoma,136,0.9138577761775692
+Oral Cavity Carcinoma,446,0.9120535489803564
+Bladder Carcinoma,405,0.9117317971534429
+B-Cell Non-Hodgkin's Lymphoma,644,0.9115119867312707
+Kidney Carcinoma,347,0.9097543855215036
+Neuroblastoma,426,0.905124103768949
+Pancreatic Carcinoma,655,0.9042636553194985
+T-Lymphoblastic Leukemia,236,0.901351139766074
+Colorectal Carcinoma,1009,0.9010231332848156
+Ovarian Carcinoma,787,0.8999267218336544
+Non-Small Cell Lung Carcinoma,1880,0.8992166258034716
+Acute Myeloid Leukemia,508,0.8991758238111891
+Hepatocellular Carcinoma,346,0.8988634784248074
+Plasma Cell Myeloma,381,0.8976583369843989
+Gastric Carcinoma,531,0.8967433111526419
+Glioma,212,0.8966766058873353
+Esophageal Carcinoma,178,0.8965777716072224
+Other Sarcomas,284,0.8943872695108965
+Cervical Carcinoma,287,0.8891602131964449
+Other Solid Cancers,471,0.888621307622333
+Glioblastoma,588,0.8806404261842273
+Melanoma,880,0.8789017969097739
+Rhabdomyosarcoma,112,0.8763795400963543
+Breast Carcinoma,1108,0.8761984992079981
+Chronic Myelogenous Leukemia,222,0.8748394887660975
+Small Cell Lung Carcinoma,995,0.8747393408673796
+Osteosarcoma,275,0.8712900109446639
+Hodgkin's Lymphoma,121,0.8706408345752605
+T-Cell Non-Hodgkin's Lymphoma,104,0.8672463458871228
+Prostate Carcinoma,140,0.8605419305748847
+Biliary Tract Carcinoma,43,0.8594404808481073
+Endometrial Carcinoma,235,0.852761519043524
+Other Blood Cancers,42,0.843806977719471
+Chondrosarcoma,53,0.8293823576842445
