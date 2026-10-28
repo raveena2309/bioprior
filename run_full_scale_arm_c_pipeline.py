@@ -53,7 +53,7 @@ os.makedirs(BIOPRIOR_TABLES_DIR, exist_ok=True)
 os.makedirs(BIOPRIOR_FIG_DIR, exist_ok=True)
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "g"
 GROQ_MODEL = "qwen/qwen3.8-27b"
 AUDIT_LOG_FILE = os.path.join(BASE_DIR, "arm_c_groq_live_audit.json")
 
